@@ -9651,12 +9651,12 @@ async function run() {
     // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
     core.debug(`Sending POST request to github ...`)
 
-    const ocotokit = github.getOctokit()
+    const ocotokit = github.getOctokit(token)
     const response = await ocotokit.rest.issues.create({
       ...github.context.repo,
       title,
       body,
-      assignees: assignees.split('\n')
+      assignees: assignees && assignees.split('\n')
     })
     core.setOutput('issue', response.data)
   } catch (error) {
