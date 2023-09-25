@@ -1,19 +1,27 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Create Issue Github Action (Testing)'
+description: 'Create a issue in github'
+author: 'Shimul Kumar Saha'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  token:
+    description: 'Token to use for creating issues'
     required: true
-    default: '1000'
+  title:
+    description: 'Title of the issue'
+    required: true
+  body:
+    description: 'Body of the issue'
+    required: true
+  assignees:
+    description: 'Assignees of the issues in newline separated'    
 
 # Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  issue:
+    description: 'The issue in json format'
 
 runs:
   using: node20
   main: dist/index.js
+  

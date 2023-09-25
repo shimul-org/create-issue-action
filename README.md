@@ -1,7 +1,7 @@
-# Create a JavaScript Action
+# JavaScript Action to Create a Github Issue
 
-[![GitHub Super-Linter](https://github.com/actions/javascript-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
-![CI](https://github.com/actions/javascript-action/actions/workflows/ci.yml/badge.svg)
+[![Linter](https://github.com/shimul-org/create-issue-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
+![CI](https://github.com/shimul-org/create-issue-action/actions/workflows/ci.yml/badge.svg)
 
 Use this template to bootstrap the creation of a JavaScript action. :rocket:
 

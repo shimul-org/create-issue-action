@@ -1,21 +1,21 @@
 {
-  "name": "javascript-action",
-  "description": "GitHub Actions JavaScript Template",
-  "version": "0.0.0",
-  "author": "",
-  "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "name": "create-issue-javascript-action",
+  "description": "Create Issue Github Action in Javascript for Testing",
+  "version": "1.0.0",
+  "author": "Shimul Kumar Saha",
+  "homepage": "https://github.com/shimul-org/create-issue-action#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/shimul-org/create-issue-action.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/shimul-org/create-issue-action/issues"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "Issues"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -63,7 +63,8 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
