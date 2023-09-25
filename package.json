@@ -3,6 +3,7 @@
   "description": "Create Issue Github Action in Javascript for Testing",
   "version": "1.0.0",
   "author": "Shimul Kumar Saha",
+  "main": "dist/index.js",
   "homepage": "https://github.com/shimul-org/create-issue-action#readme",
   "repository": {
     "type": "git",
