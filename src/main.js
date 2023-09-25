@@ -20,7 +20,7 @@ async function run() {
       ...github.context.repo,
       title,
       body,
-      assignees: assignees && assignees.split('\n')
+      assignees: assignees && assignees.split('\n') || undefined
     })
     core.setOutput('issue', response.data)
   } catch (error) {
